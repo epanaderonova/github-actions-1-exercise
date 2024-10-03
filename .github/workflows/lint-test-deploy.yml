@@ -1,0 +1,18 @@
+name: Lint, Test & Deploy
+on: push
+jobs:
+    lint-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run lint script
+              run: npm lint
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Run test script
+              run: npm test
+    deploy-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy
+              run: npm deploy

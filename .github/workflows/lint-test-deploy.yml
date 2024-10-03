@@ -5,9 +5,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Install NodeJs
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
             - name: Install dependencies
               run: npm ci
             - name: Run lint script
@@ -16,9 +16,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Install NodeJs
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
             - name: Install dependencies
               run: npm ci
             - name: Run test script
@@ -27,9 +27,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Get code
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
             - name: Install NodeJs
-              uses: actions/setup-node@v3
+              uses: actions/setup-node@v4
             - name: Install dependencies
               run: npm ci
             - name: Deploy
